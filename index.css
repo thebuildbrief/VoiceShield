@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  body {
+    background-color: #171326;
+    color: #F7F3ED;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Glassmorphism and glow effects */
+.glass-panel {
+  background: rgba(30, 25, 51, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(191, 162, 255, 0.12);
+}
+
+.glass-panel-elevated {
+  background: rgba(38, 32, 66, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(191, 162, 255, 0.2);
+}
+
+.glow-lavender {
+  box-shadow: 0 0 25px -4px rgba(191, 162, 255, 0.25);
+}
+
+.glow-lime {
+  box-shadow: 0 0 25px -4px rgba(223, 255, 117, 0.3);
+}
+
+.glow-danger {
+  box-shadow: 0 0 25px -4px rgba(255, 107, 107, 0.3);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #110d1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #342b58;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #BFA2FF;
+}
+
+/* Grid background pattern */
+.bg-grid-cyber {
+  background-image: linear-gradient(to right, rgba(191, 162, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(191, 162, 255, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Radial spotlight */
+.radial-spotlight {
+  background: radial-gradient(circle at 50% 0%, rgba(191, 162, 255, 0.12) 0%, rgba(23, 19, 38, 0) 70%);
+}
+
+.radial-lime-spotlight {
+  background: radial-gradient(circle at 80% 20%, rgba(223, 255, 117, 0.08) 0%, rgba(23, 19, 38, 0) 60%);
+}
